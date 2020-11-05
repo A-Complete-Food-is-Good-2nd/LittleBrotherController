@@ -11,7 +11,7 @@ https://github.com/OpenAyame/ayame-web-sdk を参考にしてください．
 
 ## ライセンス
 このソフトウェアはMITライセンスで配布されています．  
-このソフトウェアは、 Apache 2.0ライセンスで配布されている成果物を含んでいます．
+このソフトウェアは、 Apache 2.0ライセンスで配布されている成果物である[ayame-web-sdk](https://github.com/OpenAyame/ayame-web-sdk)を含んでいます．  
 ```
 Copyright 2019, Kyoko Kadowaki aka kdxu (Original Author)
 Copyright 2019-2020, Shiguredo Inc.
