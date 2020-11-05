@@ -2,7 +2,7 @@
 LittleBrotherのブラウザ用クライアントアプリです．
 
 ## 環境構築
-https://github.com/OpenAyame/ayame-web-sdkを参考にしてください．
+https://github.com/OpenAyame/ayame-web-sdk を参考にしてください．
 正直私もよくわかっていない...orz
 
 ## コントリビューターに対する注意
