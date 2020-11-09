@@ -12,6 +12,10 @@ LittleBrotherのブラウザ用クライアントアプリです．
     ```
     npm install
     ```
+1. parcel-bundlerを入れます．  
+    ```
+    npm install -g parcel-bundler
+    ```
 
 ## 動かす  
 1. LittleBrotherControllerディレクトリに移動します．
