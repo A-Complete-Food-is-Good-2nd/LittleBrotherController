@@ -15,7 +15,11 @@ LittleBrotherのブラウザ用クライアントアプリです．
 
 ## 動かす  
 (現在はindex.htmlすらないため，動かせない)  
-1. LittleBrotherControllerディレクトリに移動します．  
+1. LittleBrotherControllerディレクトリに移動します．
+1. PowerShellの場合はセキュリティ設定をごにょごにょします．これはターミナルを開くたびに実行してください．  
+    ```
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+    ```
 1. ビルドとサーバーのテスト用サーバーの起動をします．  
     ```
     parcel .\index.html --out-dir docs
