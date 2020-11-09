@@ -4,22 +4,22 @@ LittleBrotherのブラウザ用クライアントアプリです．
 ## 環境構築
 1. Node.jsのLTSを[ダウンロード](https://nodejs.org/ja/)してインストールします．  
 1. このRepositoryをダウンロードします．
-```
-git clone https://github.com/Complete-Foods-are-Good-2nd/LittleBrotherController.git
-```
+    ```
+    git clone https://github.com/Complete-Foods-are-Good-2nd/LittleBrotherController.git
+    ```
 1. LittleBrotherControllerディレクトリに移動します．  
 1. 必要なライブラリをインストールします．
-```
-npm install
-```
+    ```
+    npm install
+    ```
 
 ## 動かす  
 (現在はindex.htmlすらないため，動かせない)  
 1. LittleBrotherControllerディレクトリに移動します．  
 1. ビルドとサーバーのテスト用サーバーの起動します．  
-```
-parcel .\index.html --out-dir docs
-```
+    ```
+    parcel .\index.html --out-dir docs
+    ```
 1. 表示されたURLにアクセスします．  
 
 ## コントリビューターに対する注意
