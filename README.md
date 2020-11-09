@@ -25,6 +25,10 @@ LittleBrotherのブラウザ用クライアントアプリです．
     ```
 1. ビルドとサーバーのテスト用サーバーの起動をします．  
     ```
+    parcel .\index.html --out-dir docs 
+    ```
+    GitHub Pages向けのビルドは以下の通りです．
+    ```
     parcel .\index.html --out-dir docs  --public-url https://complete-foods-are-good-2nd.github.io/LittleBrotherController/
     ```
 1. 表示されたURLにアクセスします．  
