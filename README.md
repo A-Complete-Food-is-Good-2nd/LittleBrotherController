@@ -16,11 +16,20 @@ LittleBrotherのブラウザ用クライアントアプリです．
 ## 動かす  
 (現在はindex.htmlすらないため，動かせない)  
 1. LittleBrotherControllerディレクトリに移動します．  
-1. ビルドとサーバーのテスト用サーバーの起動します．  
+1. ビルドとサーバーのテスト用サーバーの起動をします．  
     ```
     parcel .\index.html --out-dir docs
     ```
 1. 表示されたURLにアクセスします．  
+
+## ライブラリに関する説明
+- [Font Awesome](https://fontawesome.com/)  
+    - 多数のベクターアイコンを使用できます．
+    - [こちらの記事](https://qiita.com/riversun/items/4faa56ac40071f638313)の後半の使い方が容量が増えにくく良いと考えています．  
+- [BootStrap](https://getbootstrap.com/)
+    - フォーム、ボタン、ナビゲーションなどのテンプレートを使用できます．  
+- [ayame-web-sdk](https://github.com/OpenAyame/ayame-web-sdk)
+    - LittleBrother本体に載せる[WebRTC Native Client Momo](https://github.com/shiguredo/momo)との通信に用います．  
 
 ## コントリビューターに対する注意
 (Apache License 2.0で配布されている成果物を使用する場合)  
