@@ -72,6 +72,9 @@ function disconnect() {
         conn.disconnect();
     }
 }
+function fullscreen() {
+    document.body.requestFullscreen();
+}
 
 //ボタンの設定
 document.querySelector("#connect").onclick = startConn;
@@ -82,3 +85,4 @@ document.querySelector("#send-1").onclick = function () {
 document.querySelector("#send-0").onclick = function () {
     sendData("0");
 };
+document.querySelector("#full-screen").onclick = fullscreen;

@@ -19993,6 +19993,10 @@ function disconnect() {
   if (conn) {
     conn.disconnect();
   }
+}
+
+function fullscreen() {
+  document.body.requestFullscreen();
 } //ボタンの設定
 
 
@@ -20006,6 +20010,8 @@ document.querySelector("#send-1").onclick = function () {
 document.querySelector("#send-0").onclick = function () {
   sendData("0");
 };
+
+document.querySelector("#full-screen").onclick = fullscreen;
 },{"bootstrap/dist/css/bootstrap.min.css":"node_modules/bootstrap/dist/css/bootstrap.min.css","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","@open-ayame/ayame-web-sdk":"node_modules/@open-ayame/ayame-web-sdk/dist/ayame.min.js","regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","qs":"node_modules/qs/lib/index.js"}],"../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -20034,7 +20040,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65395" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59913" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
