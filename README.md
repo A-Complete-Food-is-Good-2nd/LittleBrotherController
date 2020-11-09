@@ -14,7 +14,6 @@ LittleBrotherのブラウザ用クライアントアプリです．
     ```
 
 ## 動かす  
-(現在はindex.htmlすらないため，動かせない)  
 1. LittleBrotherControllerディレクトリに移動します．
 1. PowerShellの場合はセキュリティ設定をごにょごにょします．これはターミナルを開くたびに実行してください．  
     ```
@@ -22,9 +21,16 @@ LittleBrotherのブラウザ用クライアントアプリです．
     ```
 1. ビルドとサーバーのテスト用サーバーの起動をします．  
     ```
-    parcel .\index.html --out-dir docs
+    parcel .\index.html --out-dir docs  --public-url https://complete-foods-are-good-2nd.github.io/LittleBrotherController/
     ```
 1. 表示されたURLにアクセスします．  
+
+### GitHub Pagesで公開されてるよ
+[ここ](https://complete-foods-are-good-2nd.github.io/LittleBrotherController/)  
+以下のようにRoom IDとSignaling Keyを指定することでLittleBrother本体への接続が可能になります．  
+```
+https://complete-foods-are-good-2nd.github.io/LittleBrotherController/?roomId=[Room ID]&signalingKey=[Signaling Key]
+```
 
 ## ライブラリに関する説明
 - [Font Awesome](https://fontawesome.com/)  
