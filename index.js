@@ -37,6 +37,8 @@ const startConn = async () => {
 
     //データチャネルを使用するために追加
     //ここから
+    // const startConn = async () => {
+    // const conn = Ayame.connection('wss://example.com/ws', 'test-room');
     conn.on('open', async (e) => {
         dataChannel = await conn.createDataChannel(label);
         if (dataChannel) {
@@ -49,6 +51,11 @@ const startConn = async () => {
             dataChannel.onmessage = onMessage;
         }
     });
+    // await conn.connect(null);
+    // };
+    // const sendData = (data) => {
+    // conn.sendData(data);
+    // };
     //ここまで
 
     await conn.connect(null);
