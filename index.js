@@ -1,5 +1,5 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap";
 import * as Ayame from "@open-ayame/ayame-web-sdk";
 import "regenerator-runtime/runtime";
 var qs = require('qs');
@@ -79,8 +79,16 @@ function disconnect() {
         conn.disconnect();
     }
 }
-function fullscreen() {
-    document.body.requestFullscreen();
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.querySelector("#full-screen").textContent = "解除";
+        document.body.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+            document.querySelector("#full-screen").textContent = "全画面";
+            document.exitFullscreen();
+        }
+    }
 }
 
 //ボタンの設定
@@ -92,4 +100,4 @@ document.querySelector("#send-1").onclick = function () {
 document.querySelector("#send-0").onclick = function () {
     sendData("0");
 };
-document.querySelector("#full-screen").onclick = fullscreen;
+document.querySelector("#full-screen").onclick = toggleFullScreen;

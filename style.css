@@ -1,3 +1,15 @@
+button{
+        background-color: azure;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+}
+.cross3x3-dummy-btn{
+    background-color: azure;
+}
+
 #remote-video {
     position: fixed;
     z-index: -100;
@@ -26,4 +38,93 @@
     position: fixed;
     top: 1em;
     left: 1em;
+}
+
+/* 位置 */
+#move-btns{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+#rotate-btns{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* グリッド */
+.cross3x3 {
+    display: grid;
+    width: 150px;
+    height: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.cross3x3-top-left{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+.cross3x3-top {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+.cross3x3-top-right {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+.cross3x3-left {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.cross3x3-dummy-btn {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.cross3x3-right {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+.cross3x3-bottom-left {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+.cross3x3-bottom {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+.cross3x3-bottom-right {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+/* 移動キー */
+#move-btns > .cross3x3-top-left{
+    border-top-left-radius: 100%;
+}
+#move-btns > .cross3x3-top-right{
+    border-top-right-radius: 100%;
+}
+#move-btns > .cross3x3-bottom-left{
+    border-bottom-left-radius: 100%;
+}
+#move-btns > .cross3x3-bottom-right{
+    border-bottom-right-radius: 100%;
+}
+
+/* 回転キー */
+#rotate-btns > .cross3x3-top{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#rotate-btns > .cross3x3-left{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#rotate-btns > .cross3x3-right{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#rotate-btns > .cross3x3-bottom{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
