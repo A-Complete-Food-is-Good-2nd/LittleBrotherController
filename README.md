@@ -40,6 +40,9 @@ LittleBrotherのブラウザ用クライアントアプリです．
 https://complete-foods-are-good-2nd.github.io/LittleBrotherController/?roomId=[Room ID]&signalingKey=[Signaling Key]
 ```
 
+## 本体とのやり取りに用いるコマンド対応表
+<script src="https://gist.github.com/nPeeech/5d9be64e710d96d02621656b444bbe93.js"></script>
+
 ## コントリビューターに対する注意
 (Apache License 2.0で配布されている成果物を使用する場合)  
 - ソース形式の派生成果物を頒布する場合は，ソース形式の成果物に含まれている著作権，特許，商標、および帰属についての告知を，派生成果物のどこにも関係しないものは除いて，すべて派生成果物に入れること．

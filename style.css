@@ -5,6 +5,7 @@ button{
         outline: none;
         padding: 0;
         appearance: none;
+        -webkit-tap-highlight-color: transparent;
 }
 .cross3x3-dummy-btn{
     background-color: azure;
@@ -40,16 +41,27 @@ button{
     left: 1em;
 }
 
-/* 位置 */
-#move-btns{
+#go-btns{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    filter: drop-shadow(3px 3px 0px grey);
+}
+#go-btns:active{
+    filter: drop-shadow(2px 2px 0px grey);
+    bottom: 19px;
+    right: 19px;
 }
 #rotate-btns{
+    filter: drop-shadow(3px 3px 0px grey);
     position: fixed;
     bottom: 20px;
     left: 20px;
+}
+#rotate-btns:active{
+    filter: drop-shadow(2px 2px 0px grey);
+    bottom: 19px;
+    left: 21px;
 }
 
 /* グリッド */
@@ -98,16 +110,16 @@ button{
 }
 
 /* 移動キー */
-#move-btns > .cross3x3-top-left{
+#go-btns > .cross3x3-top-left{
     border-top-left-radius: 100%;
 }
-#move-btns > .cross3x3-top-right{
+#go-btns > .cross3x3-top-right{
     border-top-right-radius: 100%;
 }
-#move-btns > .cross3x3-bottom-left{
+#go-btns > .cross3x3-bottom-left{
     border-bottom-left-radius: 100%;
 }
-#move-btns > .cross3x3-bottom-right{
+#go-btns > .cross3x3-bottom-right{
     border-bottom-right-radius: 100%;
 }
 

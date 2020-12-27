@@ -94,10 +94,93 @@ function toggleFullScreen() {
 //ボタンの設定
 document.querySelector("#connect").onclick = startConn;
 document.querySelector("#disconnect").onclick = disconnect;
-document.querySelector("#send-1").onclick = function () {
-    sendData("1");
-};
-document.querySelector("#send-0").onclick = function () {
-    sendData("0");
-};
 document.querySelector("#full-screen").onclick = toggleFullScreen;
+
+// ボタン一覧
+const go_left_front_btn = document.querySelector("#go-left-front-btn");
+const go_front_btn = document.querySelector("#go-front-btn");
+const go_right_front_btn = document.querySelector("#go-right-front-btn");
+const go_right_btn = document.querySelector("#go-right-btn");
+const go_right_back_btn = document.querySelector("#go-right-back-btn");
+const go_back_btn = document.querySelector("#go-back-btn");
+const go_left_back_btn = document.querySelector("#go-left-back-btn");
+const go_left_btn = document.querySelector("#go-left-btn");
+
+const camera_up_btn = document.querySelector("#camera-up-btn");
+const camera_down_btn = document.querySelector("#camera-down-btn");
+const turn_right_btn = document.querySelector("#turn-right-btn");
+const turn_left_btn = document.querySelector("#turn-left-btn");
+
+go_left_front_btn.onpointerdown = () => {
+    sendData("GLF");
+};
+go_left_front_btn.onpointerup = () => {
+    sendData("GSP");
+};
+go_front_btn.onpointerdown = () => {
+    sendData("GFF");
+};
+go_front_btn.onpointerup = () => {
+    sendData("GSP");
+};
+go_right_front_btn.onpointerdown = () => {
+    sendData("GRF");
+};
+go_right_front_btn.onpointerup = () => {
+    sendData("GSP");
+};
+go_right_btn.onpointerdown = () => {
+    sendData("GRR");
+};
+go_right_btn.onpointerup = () => {
+    sendData("GSP");
+};
+go_right_back_btn.onpointerdown = () => {
+    sendData("GRB");
+};
+go_right_back_btn.onpointerup = () => {
+    sendData("GSP");
+};
+go_back_btn.onpointerdown = () => {
+    sendData("GBB");
+};
+go_back_btn.onpointerup = () => {
+    sendData("GSP");
+};
+go_left_back_btn.onpointerdown = () => {
+    sendData("GLB");
+};
+go_left_back_btn.onpointerup = () => {
+    sendData("GSP");
+};
+go_left_btn.onpointerdown = () => {
+    sendData("GLL");
+};
+go_left_btn.onpointerup = () => {
+    sendData("GSP");
+};
+
+camera_up_btn.onpointerdown = () => {
+    sendData("CUP");
+};
+camera_up_btn.onpointerup = () => {
+    sendData("TSP");
+}
+camera_down_btn.onpointerdown = () => {
+    sendData("CDN");
+};
+camera_down_btn.onpointerup = () => {
+    sendData("TSP");
+};
+turn_right_btn.onpointerdown = () => {
+    sendData("TRT");
+};
+turn_right_btn.onpointerup = () => {
+    sendData("TSP");
+};
+turn_left_btn.onpointerdown = () => {
+    sendData("TLF");
+};
+turn_left_btn.onpointerup = () => {
+    sendData("TSP");
+};
