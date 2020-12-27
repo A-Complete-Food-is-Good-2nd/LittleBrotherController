@@ -10793,14 +10793,14 @@ exports.far = _iconsCache;
 
 var _fontawesomeSvgCore = require("@fortawesome/fontawesome-svg-core");
 
-require("@fortawesome/free-solid-svg-icons");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 
 require("@fortawesome/free-regular-svg-icons");
 
 // 下記URLからアイコンを選んで読み込む
 // https://fontawesome.com/icons?d=gallery&m=free
 //使用するアイコンをaddすべし
-_fontawesomeSvgCore.library.add();
+_fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faChevronUp, _freeSolidSvgIcons.faChevronRight, _freeSolidSvgIcons.faChevronLeft, _freeSolidSvgIcons.faChevronDown, _freeSolidSvgIcons.faLongArrowAltUp, _freeSolidSvgIcons.faLongArrowAltDown, _freeSolidSvgIcons.faUndoAlt, _freeSolidSvgIcons.faRedoAlt);
 
 _fontawesomeSvgCore.dom.i2svg();
 },{"@fortawesome/fontawesome-svg-core":"node_modules/@fortawesome/fontawesome-svg-core/index.es.js","@fortawesome/free-solid-svg-icons":"node_modules/@fortawesome/free-solid-svg-icons/index.es.js","@fortawesome/free-regular-svg-icons":"node_modules/@fortawesome/free-regular-svg-icons/index.es.js"}],"../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -10831,7 +10831,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59913" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63333" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

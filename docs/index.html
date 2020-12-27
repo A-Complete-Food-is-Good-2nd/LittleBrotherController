@@ -6,26 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LittleBrotherController</title>
     <link rel="stylesheet" href="https://complete-foods-are-good-2nd.github.io/LittleBrotherController/style.e308ff8e.css">
-<script src="https://complete-foods-are-good-2nd.github.io/LittleBrotherController/style.e308ff8e.js"></script><link rel="stylesheet" href="https://complete-foods-are-good-2nd.github.io/LittleBrotherController/LittleBrotherController.e31bb0bc.css"></head>
+<script src="https://complete-foods-are-good-2nd.github.io/LittleBrotherController/style.e308ff8e.js"></script></head>
 
 <body style="background-color: black;">
     <video id="remote-video" autoplay="" playsinline="" controls=""></video>
     <div id="btn-wrapper">
-        <button type="button" class="btn btn-primary" id="connect">
+        <button type="button" id="connect">
             接続
         </button>
-        <button type="button" class="btn btn-primary" id="disconnect">
+        <button type="button" id="disconnect">
             切断
         </button>
-        <button type="button" class="btn btn-primary" id="send-1">
-            '1'を送信
-        </button>
-        <button type="button" class="btn btn-primary" id="send-0">
-            '0'を送信
-        </button>
-        <button type="button" class="btn btn-primary" id="full-screen">
+        <button type="button" id="full-screen">
             全画面
         </button>
+        <button>
+            閃光
+        </button>
+    </div>
+    <div class="cross3x3" id="go-btns">
+        <button class="cross3x3-top-left" id="go-left-front-btn"></button>
+        <button class="cross3x3-top" id="go-front-btn"><i class="fas fa-chevron-up"></i></button>
+        <button class="cross3x3-top-right" id="go-right-front-btn"></button>
+        <button class="cross3x3-left" id="go-left-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="cross3x3-right" id="go-right-btn"><i class="fas fa-chevron-right"></i></button>
+        <button class="cross3x3-bottom-left" id="go-left-back-btn"></button>
+        <button class="cross3x3-bottom" id="go-back-btn"><i class="fas fa-chevron-down"></i></button>
+        <button class="cross3x3-bottom-right" id="go-right-back-btn"></button>
+    </div>
+    <div class="cross3x3" id="rotate-btns">
+        <button class="cross3x3-top" id="camera-up-btn"><i class="fas fa-long-arrow-alt-up"></i></button>
+        <button class="cross3x3-left" id="turn-left-btn"><i class="fas fa-undo-alt"></i></button>
+        <div class="cross3x3-dummy-btn"></div>
+        <button class="cross3x3-right" id="turn-right-btn"><i class="fas fa-redo-alt"></i></button>
+        <button class="cross3x3-bottom" id="camera-down-btn"><i class="fas fa-long-arrow-alt-down"></i></button>
     </div>
 </body>
 <script src="https://complete-foods-are-good-2nd.github.io/LittleBrotherController/LittleBrotherController.e31bb0bc.js"></script>
