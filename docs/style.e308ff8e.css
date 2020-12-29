@@ -45,24 +45,18 @@ button{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    filter: drop-shadow(3px 3px 0px grey);
-}
-#go-btns:active{
-    filter: drop-shadow(2px 2px 0px grey);
-    bottom: 19px;
-    right: 19px;
 }
 #rotate-btns{
-    filter: drop-shadow(3px 3px 0px grey);
+    /* filter: drop-shadow(3px 3px 0px grey); */
     position: fixed;
     bottom: 20px;
     left: 20px;
 }
-#rotate-btns:active{
+/* #rotate-btns:active{
     filter: drop-shadow(2px 2px 0px grey);
     bottom: 19px;
     left: 21px;
-}
+} */
 
 /* グリッド */
 .cross3x3 {
@@ -75,14 +69,17 @@ button{
 .cross3x3-top-left{
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    z-index: -300;
 }
 .cross3x3-top {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    z-index: -300;
 }
 .cross3x3-top-right {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+    z-index: -100;
 }
 .cross3x3-left {
     grid-row: 2 / 3;
@@ -140,5 +137,19 @@ button{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.btn-shadow{
+    filter: drop-shadow(0px 2px 0px grey);
+}
+.btn-shadow:active{
+    transform: translateX(0px) translateY(2px);
+    filter: drop-shadow(0px 0px 0px grey);
+}
+
+.f-btn{
+    border-radius: 3px;
+}
+
+/* TODO z-indexを駆使して影とボタンがかぶらないようにする <- 8方向ボタンの方がむり*/
 
 /*# sourceMappingURL=https://complete-foods-are-good-2nd.github.io/LittleBrotherController/style.e308ff8e.css.map */
