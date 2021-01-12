@@ -90,6 +90,15 @@ function toggleFullScreen() {
         }
     }
 }
+//ダブルタップズーム無効化
+let lastTouchEnd = 0;
+document.addEventListener('touchend', function (event) {
+    var now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 350) {
+        event.preventDefault();
+    }
+    lastTouchEnd = now;
+}, false);
 
 //ボタンの設定
 document.querySelector("#connect").onclick = startConn;

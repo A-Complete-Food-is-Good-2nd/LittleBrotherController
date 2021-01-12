@@ -2011,8 +2011,19 @@ function toggleFullScreen() {
       document.exitFullscreen();
     }
   }
-} //ボタンの設定
+} //ダブルタップズーム無効化
 
+
+var lastTouchEnd = 0;
+document.addEventListener('touchend', function (event) {
+  var now = new Date().getTime();
+
+  if (now - lastTouchEnd <= 350) {
+    event.preventDefault();
+  }
+
+  lastTouchEnd = now;
+}, false); //ボタンの設定
 
 document.querySelector("#connect").onclick = startConn;
 document.querySelector("#disconnect").onclick = disconnect;
@@ -2154,7 +2165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63097" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63922" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
