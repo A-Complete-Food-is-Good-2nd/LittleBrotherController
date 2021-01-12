@@ -29,7 +29,7 @@
 #f-btn-wrapper{
     width: 100%;
     position: fixed;
-    top: 30px;
+    bottom: 0px;
     left: 0px;
     overflow-x: scroll;
     white-space: nowrap;
@@ -41,12 +41,12 @@
 
 #go-btns{
     position: fixed;
-    bottom: 50px;
+    bottom: 90px;
     right: 20px;
 }
 #rotate-btns{
     position: fixed;
-    bottom: 50px;
+    bottom: 90px;
     left: 20px;
 }
 
@@ -140,6 +140,7 @@
     border-radius: 3px;
     padding: 5px;
     margin: 5px;
+    margin-bottom: 20px;
 }
 .div2btn{
     display: inline-block;
