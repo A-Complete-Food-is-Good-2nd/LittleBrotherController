@@ -41,7 +41,9 @@ https://complete-foods-are-good-2nd.github.io/LittleBrotherController/?roomId=[R
 ```
 
 ## 本体とのやり取りに用いるコマンド対応表
-<script src="https://gist.github.com/nPeeech/5d9be64e710d96d02621656b444bbe93.js"></script>
+<script src="https://gist.github.com/nPeeech/5d9be64e710d96d02621656b444bbe93.js"></script>  
+
+https://gist.github.com/nPeeech/5d9be64e710d96d02621656b444bbe93
 
 ## コントリビューターに対する注意
 (Apache License 2.0で配布されている成果物を使用する場合)  

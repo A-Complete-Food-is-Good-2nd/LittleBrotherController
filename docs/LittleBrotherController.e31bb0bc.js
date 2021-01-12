@@ -2003,11 +2003,11 @@ function disconnect() {
 
 function toggleFullScreen() {
   if (!document.fullscreenElement) {
-    document.querySelector("#full-screen").textContent = "解除";
+    // document.querySelector("#full-screen").textContent = "解除";
     document.body.requestFullscreen();
   } else {
     if (document.exitFullscreen) {
-      document.querySelector("#full-screen").textContent = "全画面";
+      // document.querySelector("#full-screen").textContent = "全画面";
       document.exitFullscreen();
     }
   }
@@ -2018,7 +2018,7 @@ var lastTouchEnd = 0;
 document.addEventListener('touchend', function (event) {
   var now = new Date().getTime();
 
-  if (now - lastTouchEnd <= 350) {
+  if (now - lastTouchEnd <= 450) {
     event.preventDefault();
   }
 
@@ -2165,7 +2165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63922" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63891" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

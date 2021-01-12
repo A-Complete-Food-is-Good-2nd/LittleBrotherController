@@ -26,10 +26,17 @@
     }
 }
 
-#btn-wrapper{
+#f-btn-wrapper{
+    width: 100%;
     position: fixed;
-    top: 1em;
-    left: 1em;
+    top: 30px;
+    left: 0px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #go-btns{
@@ -129,8 +136,10 @@
 }
 
 .f-btn{
+    display: inline-block;
     border-radius: 3px;
     padding: 5px;
+    margin: 5px;
 }
 .div2btn{
     display: inline-block;
@@ -148,5 +157,3 @@
     text-align: center;
     line-height: 50px;
 }
-
-/* TODO cross-btnをdivにする */

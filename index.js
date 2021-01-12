@@ -81,11 +81,11 @@ function disconnect() {
 }
 function toggleFullScreen() {
     if (!document.fullscreenElement) {
-        document.querySelector("#full-screen").textContent = "解除";
+        // document.querySelector("#full-screen").textContent = "解除";
         document.body.requestFullscreen();
     } else {
         if (document.exitFullscreen) {
-            document.querySelector("#full-screen").textContent = "全画面";
+            // document.querySelector("#full-screen").textContent = "全画面";
             document.exitFullscreen();
         }
     }
@@ -94,7 +94,7 @@ function toggleFullScreen() {
 let lastTouchEnd = 0;
 document.addEventListener('touchend', function (event) {
     var now = (new Date()).getTime();
-    if (now - lastTouchEnd <= 350) {
+    if (now - lastTouchEnd <= 450) {
         event.preventDefault();
     }
     lastTouchEnd = now;
