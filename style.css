@@ -140,5 +140,17 @@ button{
 .f-btn{
     border-radius: 3px;
 }
+.div2btn{
+    display: inline-block;
+    background-color: azure;
+    user-select: none; /* CSS3 */
+    text-align: center;
+}
+.cross-btn{
+    height: 50px;
+    width: 50;
+    text-align: center;
+    line-height: 50px;
+}
 
-/* TODO z-indexを駆使して影とボタンがかぶらないようにする <- 8方向ボタンの方がむり*/
+/* TODO cross-btnをdivにする */

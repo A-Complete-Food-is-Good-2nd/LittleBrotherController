@@ -10803,7 +10803,7 @@ require("@fortawesome/free-regular-svg-icons");
 _fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faChevronUp, _freeSolidSvgIcons.faChevronRight, _freeSolidSvgIcons.faChevronLeft, _freeSolidSvgIcons.faChevronDown, _freeSolidSvgIcons.faLongArrowAltUp, _freeSolidSvgIcons.faLongArrowAltDown, _freeSolidSvgIcons.faUndoAlt, _freeSolidSvgIcons.faRedoAlt);
 
 _fontawesomeSvgCore.dom.i2svg();
-},{"@fortawesome/fontawesome-svg-core":"node_modules/@fortawesome/fontawesome-svg-core/index.es.js","@fortawesome/free-solid-svg-icons":"node_modules/@fortawesome/free-solid-svg-icons/index.es.js","@fortawesome/free-regular-svg-icons":"node_modules/@fortawesome/free-regular-svg-icons/index.es.js"}],"../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"@fortawesome/fontawesome-svg-core":"node_modules/@fortawesome/fontawesome-svg-core/index.es.js","@fortawesome/free-solid-svg-icons":"node_modules/@fortawesome/free-solid-svg-icons/index.es.js","@fortawesome/free-regular-svg-icons":"node_modules/@fortawesome/free-regular-svg-icons/index.es.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10831,7 +10831,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51183" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63097" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -11007,5 +11007,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","fontawesome.js"], null)
+},{}]},{},["../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","fontawesome.js"], null)
 //# sourceMappingURL=https://complete-foods-are-good-2nd.github.io/LittleBrotherController/fontawesome.7dae0e88.js.map
