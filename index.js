@@ -173,14 +173,15 @@ camera_up_btn.onpointerdown = () => {
     sendData("CUP");
 };
 camera_up_btn.onpointerup = () => {
-    sendData("TSP");
+    sendData("CSP");
 }
 camera_down_btn.onpointerdown = () => {
     sendData("CDN");
 };
 camera_down_btn.onpointerup = () => {
-    sendData("TSP");
+    sendData("CSP");
 };
+
 turn_right_btn.onpointerdown = () => {
     sendData("TRT");
 };

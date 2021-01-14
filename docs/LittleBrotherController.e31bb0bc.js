@@ -2111,7 +2111,7 @@ camera_up_btn.onpointerdown = function () {
 };
 
 camera_up_btn.onpointerup = function () {
-  sendData("TSP");
+  sendData("CSP");
 };
 
 camera_down_btn.onpointerdown = function () {
@@ -2119,7 +2119,7 @@ camera_down_btn.onpointerdown = function () {
 };
 
 camera_down_btn.onpointerup = function () {
-  sendData("TSP");
+  sendData("CSP");
 };
 
 turn_right_btn.onpointerdown = function () {
@@ -2165,7 +2165,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58917" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59383" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
