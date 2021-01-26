@@ -39,6 +39,10 @@ LittleBrotherのブラウザ用クライアントアプリです．
 ```
 https://complete-foods-are-good-2nd.github.io/LittleBrotherController/?roomId=[Room ID]&signalingKey=[Signaling Key]
 ```
+### 操作方法
+タッチパネルの場合は見た通り  
+PCでキーボードを用いる場合はWASDで上下左右の4方向+QEZXでななめ4方向に移動，カーソルキーで視点移動が可能
+
 
 ## 本体とのやり取りに用いるコマンド対応表
 <script src="https://gist.github.com/nPeeech/5d9be64e710d96d02621656b444bbe93.js"></script>  

@@ -1906,7 +1906,10 @@ if (url) {
 
 var conn = Ayame.connection(signalingUrl, roomId);
 conn.options.video.direction = 'recvonly';
-conn.options.audio.direction = 'recvonly'; //signaling keyを設定するようにした
+conn.options.audio.direction = 'recvonly'; //video codecの指定をできるようにするために追加
+
+conn.options.video.codec = "H264"; //デスクトップChrome系のブラウザでのみ反映される
+//signaling keyを設定するようにした
 
 conn.options.signalingKey = signalingKey;
 
@@ -2136,7 +2139,182 @@ turn_left_btn.onpointerdown = function () {
 
 turn_left_btn.onpointerup = function () {
   sendData("TSP");
-};
+}; //PC用のキーボード操作
+
+
+var prevus_down_key_code = null;
+
+function do_by_down(code, func) {
+  if (prevus_down_key_code != code) {
+    prevus_down_key_code = code;
+    func();
+  }
+}
+
+function do_by_up(code, func) {
+  if (prevus_down_key_code === code) {
+    prevus_down_key_code = null;
+  }
+
+  func();
+}
+
+window.addEventListener("keydown", function (event) {
+  switch (event.code) {
+    case "KeyQ":
+      do_by_down("KeyQ", function () {
+        sendData("GLF");
+      });
+      break;
+
+    case "KeyW":
+      do_by_down("KeyW", function () {
+        sendData("GFF");
+      });
+      break;
+
+    case "KeyE":
+      do_by_down("KeyE", function () {
+        sendData("GRF");
+      });
+      break;
+
+    case "KeyD":
+      do_by_down("KeyD", function () {
+        sendData("GRR");
+      });
+      break;
+
+    case "KeyX":
+      do_by_down("KeyX", function () {
+        sendData("GRB");
+      });
+      break;
+
+    case "KeyS":
+      do_by_down("KeyS", function () {
+        sendData("GBB");
+      });
+      break;
+
+    case "KeyZ":
+      do_by_down("KeyZ", function () {
+        sendData("GLB");
+      });
+      break;
+
+    case "KeyA":
+      do_by_down("KeyA", function () {
+        sendData("GLL");
+      });
+      break;
+
+    case "ArrowUp":
+      do_by_down("ArrowUp", function () {
+        sendData("CUP");
+      });
+      break;
+
+    case "ArrowDown":
+      do_by_down("ArrowDown", function () {
+        sendData("CDN");
+      });
+      break;
+
+    case "ArrowLeft":
+      do_by_down("ArrowLeft", function () {
+        sendData("TLF");
+      });
+      break;
+
+    case "ArrowRight":
+      do_by_down("ArrowRight", function () {
+        sendData("TRT");
+      });
+      break;
+
+    default:
+      break;
+  }
+});
+window.addEventListener("keyup", function (event) {
+  switch (event.code) {
+    case "KeyQ":
+      do_by_up("KeyQ", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "KeyW":
+      do_by_up("KeyW", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "KeyE":
+      do_by_up("KeyE", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "KeyD":
+      do_by_up("KeyD", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "KeyX":
+      do_by_up("KeyX", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "KeyS":
+      do_by_up("KeyS", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "KeyZ":
+      do_by_up("KeyZ", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "KeyA":
+      do_by_up("KeyA", function () {
+        sendData("GSP");
+      });
+      break;
+
+    case "ArrowUp":
+      do_by_up("ArrowUp", function () {
+        sendData("CSP");
+      });
+      break;
+
+    case "ArrowDown":
+      do_by_up("ArrowDown", function () {
+        sendData("CSP");
+      });
+      break;
+
+    case "ArrowLeft":
+      do_by_up("ArrowLeft", function () {
+        sendData("TSP");
+      });
+      break;
+
+    case "ArrowRight":
+      do_by_up("ArrowRight", function () {
+        sendData("TSP");
+      });
+      break;
+
+    default:
+      break;
+  }
+});
 },{"@open-ayame/ayame-web-sdk":"node_modules/@open-ayame/ayame-web-sdk/dist/ayame.min.js","regenerator-runtime/runtime":"node_modules/regenerator-runtime/runtime.js","qs":"node_modules/qs/lib/index.js"}],"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -2165,7 +2343,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59383" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50586" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
