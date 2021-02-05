@@ -124,78 +124,78 @@ const turn_right_btn = document.querySelector("#turn-right-btn");
 const turn_left_btn = document.querySelector("#turn-left-btn");
 
 go_left_front_btn.onpointerdown = () => {
-    sendData("GLF");
+    sendData("glf");
 };
 go_left_front_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 go_front_btn.onpointerdown = () => {
-    sendData("GFF");
+    sendData("gff");
 };
 go_front_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 go_right_front_btn.onpointerdown = () => {
-    sendData("GRF");
+    sendData("grf");
 };
 go_right_front_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 go_right_btn.onpointerdown = () => {
-    sendData("GRR");
+    sendData("grr");
 };
 go_right_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 go_right_back_btn.onpointerdown = () => {
-    sendData("GRB");
+    sendData("grb");
 };
 go_right_back_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 go_back_btn.onpointerdown = () => {
-    sendData("GBB");
+    sendData("gbb");
 };
 go_back_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 go_left_back_btn.onpointerdown = () => {
-    sendData("GLB");
+    sendData("glb");
 };
 go_left_back_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 go_left_btn.onpointerdown = () => {
-    sendData("GLL");
+    sendData("gll");
 };
 go_left_btn.onpointerup = () => {
-    sendData("GSP");
+    sendData("gsp");
 };
 
 camera_up_btn.onpointerdown = () => {
-    sendData("CUP");
+    sendData("cup");
 };
 camera_up_btn.onpointerup = () => {
-    sendData("CSP");
+    sendData("csp");
 }
 camera_down_btn.onpointerdown = () => {
-    sendData("CDN");
+    sendData("cdn");
 };
 camera_down_btn.onpointerup = () => {
-    sendData("CSP");
+    sendData("csp");
 };
 
 turn_right_btn.onpointerdown = () => {
-    sendData("TRT");
+    sendData("trt");
 };
 turn_right_btn.onpointerup = () => {
-    sendData("TSP");
+    sendData("tsp");
 };
 turn_left_btn.onpointerdown = () => {
-    sendData("TLF");
+    sendData("tlf");
 };
 turn_left_btn.onpointerup = () => {
-    sendData("TSP");
+    sendData("tsp");
 };
 
 //PC用のキーボード操作
@@ -216,40 +216,40 @@ function do_by_up(code, func) {
 window.addEventListener("keydown", event => {
     switch (event.code) {
         case "KeyQ":
-            do_by_down("KeyQ", () => { sendData("GLF"); });
+            do_by_down("KeyQ", () => { sendData("glf"); });
             break;
         case "KeyW":
-            do_by_down("KeyW", () => { sendData("GFF"); });
+            do_by_down("KeyW", () => { sendData("gff"); });
             break;
         case "KeyE":
-            do_by_down("KeyE", () => { sendData("GRF"); });
+            do_by_down("KeyE", () => { sendData("grf"); });
             break;
         case "KeyD":
-            do_by_down("KeyD", () => { sendData("GRR"); });
+            do_by_down("KeyD", () => { sendData("grr"); });
             break;
         case "KeyX":
-            do_by_down("KeyX", () => { sendData("GRB"); });
+            do_by_down("KeyX", () => { sendData("grb"); });
             break;
         case "KeyS":
-            do_by_down("KeyS", () => { sendData("GBB"); });
+            do_by_down("KeyS", () => { sendData("gbb"); });
             break;
         case "KeyZ":
-            do_by_down("KeyZ", () => { sendData("GLB"); });
+            do_by_down("KeyZ", () => { sendData("glb"); });
             break;
         case "KeyA":
-            do_by_down("KeyA", () => { sendData("GLL"); });
+            do_by_down("KeyA", () => { sendData("gll"); });
             break;
         case "ArrowUp":
-            do_by_down("ArrowUp", () => {sendData("CUP");});
+            do_by_down("ArrowUp", () => {sendData("cup");});
             break;
         case "ArrowDown":
-            do_by_down("ArrowDown", () => {sendData("CDN");});
+            do_by_down("ArrowDown", () => {sendData("cdn");});
             break;
         case "ArrowLeft":
-            do_by_down("ArrowLeft", ()=>{sendData("TLF");});
+            do_by_down("ArrowLeft", ()=>{sendData("tlf");});
             break;
         case "ArrowRight":
-            do_by_down("ArrowRight", ()=>{sendData("TRT");});
+            do_by_down("ArrowRight", ()=>{sendData("trt");});
             break;
         default:
             break;
@@ -259,40 +259,40 @@ window.addEventListener("keydown", event => {
 window.addEventListener("keyup", event => {
     switch (event.code) {
         case "KeyQ":
-            do_by_up("KeyQ", () => { sendData("GSP"); });
+            do_by_up("KeyQ", () => { sendData("gsp"); });
             break;
         case "KeyW":
-            do_by_up("KeyW", () => { sendData("GSP"); });
+            do_by_up("KeyW", () => { sendData("gsp"); });
             break;
         case "KeyE":
-            do_by_up("KeyE", () => { sendData("GSP"); });
+            do_by_up("KeyE", () => { sendData("gsp"); });
             break;
         case "KeyD":
-            do_by_up("KeyD", () => { sendData("GSP"); });
+            do_by_up("KeyD", () => { sendData("gsp"); });
             break;
         case "KeyX":
-            do_by_up("KeyX", () => { sendData("GSP"); });
+            do_by_up("KeyX", () => { sendData("gsp"); });
             break;
         case "KeyS":
-            do_by_up("KeyS", () => { sendData("GSP"); });
+            do_by_up("KeyS", () => { sendData("gsp"); });
             break;
         case "KeyZ":
-            do_by_up("KeyZ", () => { sendData("GSP"); });
+            do_by_up("KeyZ", () => { sendData("gsp"); });
             break;
         case "KeyA":
-            do_by_up("KeyA", () => { sendData("GSP"); });
+            do_by_up("KeyA", () => { sendData("gsp"); });
             break;
         case "ArrowUp":
-            do_by_up("ArrowUp", () => {sendData("CSP");});
+            do_by_up("ArrowUp", () => {sendData("csp");});
             break;
         case "ArrowDown":
-            do_by_up("ArrowDown", () => {sendData("CSP");});
+            do_by_up("ArrowDown", () => {sendData("csp");});
             break;
         case "ArrowLeft":
-            do_by_up("ArrowLeft", ()=>{sendData("TSP");});
+            do_by_up("ArrowLeft", ()=>{sendData("tsp");});
             break;
         case "ArrowRight":
-            do_by_up("ArrowRight", ()=>{sendData("TSP");});
+            do_by_up("ArrowRight", ()=>{sendData("tsp");});
             break;
         default:
             break;

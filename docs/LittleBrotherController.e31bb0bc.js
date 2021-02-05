@@ -2046,99 +2046,99 @@ var turn_right_btn = document.querySelector("#turn-right-btn");
 var turn_left_btn = document.querySelector("#turn-left-btn");
 
 go_left_front_btn.onpointerdown = function () {
-  sendData("GLF");
+  sendData("glf");
 };
 
 go_left_front_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 go_front_btn.onpointerdown = function () {
-  sendData("GFF");
+  sendData("gff");
 };
 
 go_front_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 go_right_front_btn.onpointerdown = function () {
-  sendData("GRF");
+  sendData("grf");
 };
 
 go_right_front_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 go_right_btn.onpointerdown = function () {
-  sendData("GRR");
+  sendData("grr");
 };
 
 go_right_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 go_right_back_btn.onpointerdown = function () {
-  sendData("GRB");
+  sendData("grb");
 };
 
 go_right_back_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 go_back_btn.onpointerdown = function () {
-  sendData("GBB");
+  sendData("gbb");
 };
 
 go_back_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 go_left_back_btn.onpointerdown = function () {
-  sendData("GLB");
+  sendData("glb");
 };
 
 go_left_back_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 go_left_btn.onpointerdown = function () {
-  sendData("GLL");
+  sendData("gll");
 };
 
 go_left_btn.onpointerup = function () {
-  sendData("GSP");
+  sendData("gsp");
 };
 
 camera_up_btn.onpointerdown = function () {
-  sendData("CUP");
+  sendData("cup");
 };
 
 camera_up_btn.onpointerup = function () {
-  sendData("CSP");
+  sendData("csp");
 };
 
 camera_down_btn.onpointerdown = function () {
-  sendData("CDN");
+  sendData("cdn");
 };
 
 camera_down_btn.onpointerup = function () {
-  sendData("CSP");
+  sendData("csp");
 };
 
 turn_right_btn.onpointerdown = function () {
-  sendData("TRT");
+  sendData("trt");
 };
 
 turn_right_btn.onpointerup = function () {
-  sendData("TSP");
+  sendData("tsp");
 };
 
 turn_left_btn.onpointerdown = function () {
-  sendData("TLF");
+  sendData("tlf");
 };
 
 turn_left_btn.onpointerup = function () {
-  sendData("TSP");
+  sendData("tsp");
 }; //PC用のキーボード操作
 
 
@@ -2163,73 +2163,73 @@ window.addEventListener("keydown", function (event) {
   switch (event.code) {
     case "KeyQ":
       do_by_down("KeyQ", function () {
-        sendData("GLF");
+        sendData("glf");
       });
       break;
 
     case "KeyW":
       do_by_down("KeyW", function () {
-        sendData("GFF");
+        sendData("gff");
       });
       break;
 
     case "KeyE":
       do_by_down("KeyE", function () {
-        sendData("GRF");
+        sendData("grf");
       });
       break;
 
     case "KeyD":
       do_by_down("KeyD", function () {
-        sendData("GRR");
+        sendData("grr");
       });
       break;
 
     case "KeyX":
       do_by_down("KeyX", function () {
-        sendData("GRB");
+        sendData("grb");
       });
       break;
 
     case "KeyS":
       do_by_down("KeyS", function () {
-        sendData("GBB");
+        sendData("gbb");
       });
       break;
 
     case "KeyZ":
       do_by_down("KeyZ", function () {
-        sendData("GLB");
+        sendData("glb");
       });
       break;
 
     case "KeyA":
       do_by_down("KeyA", function () {
-        sendData("GLL");
+        sendData("gll");
       });
       break;
 
     case "ArrowUp":
       do_by_down("ArrowUp", function () {
-        sendData("CUP");
+        sendData("cup");
       });
       break;
 
     case "ArrowDown":
       do_by_down("ArrowDown", function () {
-        sendData("CDN");
+        sendData("cdn");
       });
       break;
 
     case "ArrowLeft":
       do_by_down("ArrowLeft", function () {
-        sendData("TLF");
+        sendData("tlf");
       });
       break;
 
     case "ArrowRight":
       do_by_down("ArrowRight", function () {
-        sendData("TRT");
+        sendData("trt");
       });
       break;
 
@@ -2241,73 +2241,73 @@ window.addEventListener("keyup", function (event) {
   switch (event.code) {
     case "KeyQ":
       do_by_up("KeyQ", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "KeyW":
       do_by_up("KeyW", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "KeyE":
       do_by_up("KeyE", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "KeyD":
       do_by_up("KeyD", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "KeyX":
       do_by_up("KeyX", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "KeyS":
       do_by_up("KeyS", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "KeyZ":
       do_by_up("KeyZ", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "KeyA":
       do_by_up("KeyA", function () {
-        sendData("GSP");
+        sendData("gsp");
       });
       break;
 
     case "ArrowUp":
       do_by_up("ArrowUp", function () {
-        sendData("CSP");
+        sendData("csp");
       });
       break;
 
     case "ArrowDown":
       do_by_up("ArrowDown", function () {
-        sendData("CSP");
+        sendData("csp");
       });
       break;
 
     case "ArrowLeft":
       do_by_up("ArrowLeft", function () {
-        sendData("TSP");
+        sendData("tsp");
       });
       break;
 
     case "ArrowRight":
       do_by_up("ArrowRight", function () {
-        sendData("TSP");
+        sendData("tsp");
       });
       break;
 
@@ -2343,7 +2343,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65199" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55795" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
