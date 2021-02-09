@@ -103,12 +103,27 @@ document.addEventListener('touchend', function (event) {
     lastTouchEnd = now;
 }, false);
 
-//ボタンの設定
+//特殊操作用のボタンの設定
 document.querySelector("#connect").onclick = startConn;
 document.querySelector("#disconnect").onclick = disconnect;
 document.querySelector("#full-screen").onclick = toggleFullScreen;
+document.querySelector("#explosion-sound").onclick =() => {
+    sendData("swe");
+};
+document.querySelector("#warning-sound").onclick = () => {
+    sendData("swa");
+};
+document.querySelector("#led-on").onclick = () => {
+    sendData("lon");
+};
+document.querySelector("#led-blink").onclick = () => {
+    sendData("lbl");
+};
+document.querySelector("#led-off").onclick = () => {
+    sendData("lof");
+};
 
-// ボタン一覧
+// 方向ボタン一覧
 const go_left_front_btn = document.querySelector("#go-left-front-btn");
 const go_front_btn = document.querySelector("#go-front-btn");
 const go_right_front_btn = document.querySelector("#go-right-front-btn");
